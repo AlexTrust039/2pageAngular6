@@ -1,0 +1,6 @@
+<mat-card *ngFor="let item of list;">
+    <div (click)="item.check = !item.check">
+      <mat-icon [innerText]="item.check ? 'favorite_border' : 'favorite'"></mat-icon>
+    </div>
+    <p style="margin: 0"> {{item.question}} </p>
+</mat-card>

@@ -1,0 +1,10 @@
+mat-card {
+    margin-top: 5px;
+    width: 90%;
+    display: flex;
+}
+
+mat-icon {
+    margin-right: 15px;
+    cursor: pointer;
+}

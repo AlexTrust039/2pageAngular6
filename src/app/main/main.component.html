@@ -1,0 +1,17 @@
+<div id="main">
+  <form [formGroup]='form'>
+    <h1>Ответьте на важный и насущный вопрос</h1>
+    <mat-form-field>
+      <textarea matTextareaAutosize matInput placeholder="Ваш ответ" formControlName="question"></textarea>
+    </mat-form-field>
+    <div class="add">
+      <button mat-raised-button color="primary" (click)="add()" [disabled]="form.value.question == null">Отправить</button>
+    </div>
+  </form>
+
+  <mat-card *ngFor="let item of list;">
+    <mat-card-content>
+      <p> {{item.question}} </p>
+    </mat-card-content>
+  </mat-card>
+</div>
